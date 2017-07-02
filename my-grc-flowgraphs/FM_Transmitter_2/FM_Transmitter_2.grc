@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?grc format='1' created='3.7.10'?>
 <flow_graph>
-  <timestamp>Wed Jun 21 12:22:29 2017</timestamp>
+  <timestamp>Fri Jun 23 17:57:08 2017</timestamp>
   <block>
     <key>options</key>
     <param>
       <key>author</key>
-      <value>Scott Fraser</value>
+      <value></value>
     </param>
     <param>
       <key>window_size</key>
-      <value>1600, 1490</value>
+      <value>3250, 1490</value>
     </param>
     <param>
       <key>category</key>
@@ -18,13 +18,11 @@
     </param>
     <param>
       <key>comment</key>
-      <value>http://wiki.opendigitalradio.org/FM_transmission_on_many_channels_using_gnuradio
-
-http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
+      <value></value>
     </param>
     <param>
       <key>description</key>
-      <value></value>
+      <value>Second try at a FM transmitter</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -32,7 +30,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(56, 8)</value>
+      <value>(8, 8)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -40,7 +38,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>generate_options</key>
-      <value>no_gui</value>
+      <value>wx_gui</value>
     </param>
     <param>
       <key>hier_block_src_path</key>
@@ -48,7 +46,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>id</key>
-      <value>fm_transmitter</value>
+      <value>top_block</value>
     </param>
     <param>
       <key>max_nouts</key>
@@ -80,88 +78,148 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>title</key>
-      <value>FM Transmitter</value>
+      <value>FM Transmitter; Try 2</value>
     </param>
   </block>
   <block>
-    <key>variable</key>
+    <key>variable_text_box</key>
     <param>
       <key>comment</key>
       <value></value>
+    </param>
+    <param>
+      <key>converver</key>
+      <value>float_converter</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>433e6</value>
     </param>
     <param>
       <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
+      <key>formatter</key>
+      <value>None</value>
+    </param>
+    <param>
       <key>_coordinate</key>
-      <value>(8, 244)</value>
+      <value>(720, 56)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
     </param>
     <param>
       <key>id</key>
       <value>center_freq</value>
     </param>
     <param>
-      <key>value</key>
-      <value>102.1e6</value>
+      <key>label</key>
+      <value>Center Frequency</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
     </param>
   </block>
   <block>
-    <key>variable</key>
+    <key>variable_text_box</key>
     <param>
       <key>comment</key>
       <value></value>
+    </param>
+    <param>
+      <key>converver</key>
+      <value>float_converter</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>432e6</value>
     </param>
     <param>
       <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
+      <key>formatter</key>
+      <value>None</value>
+    </param>
+    <param>
       <key>_coordinate</key>
-      <value>(152, 444)</value>
+      <value>(904, 56)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
     </param>
     <param>
       <key>id</key>
-      <value>channel_one_freq</value>
+      <value>channel_one</value>
     </param>
     <param>
-      <key>value</key>
-      <value>103e6</value>
+      <key>label</key>
+      <value>Channel One Frequency</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
     </param>
   </block>
   <block>
-    <key>variable</key>
+    <key>variable_text_box</key>
     <param>
       <key>comment</key>
       <value></value>
+    </param>
+    <param>
+      <key>converver</key>
+      <value>float_converter</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>434e6</value>
     </param>
     <param>
       <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
+      <key>formatter</key>
+      <value>None</value>
+    </param>
+    <param>
       <key>_coordinate</key>
-      <value>(464, 428)</value>
+      <value>(1120, 56)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
     </param>
     <param>
       <key>id</key>
       <value>channel_two</value>
     </param>
     <param>
-      <key>value</key>
-      <value>102.1e6</value>
+      <key>label</key>
+      <value>Channel Two Frequency</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
     </param>
   </block>
   <block>
@@ -172,11 +230,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 164)</value>
+      <value>(8, 160)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -188,62 +246,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>value</key>
-      <value>44100</value>
-    </param>
-  </block>
-  <block>
-    <key>variable_band_pass_filter_taps</key>
-    <param>
-      <key>beta</key>
-      <value>6.76</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(456, 1088)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>gain</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>high_cutoff_freq</key>
-      <value></value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>variable_band_pass_filter_taps_0</value>
-    </param>
-    <param>
-      <key>low_cutoff_freq</key>
-      <value></value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>taps_real</value>
-    </param>
-    <param>
-      <key>width</key>
-      <value></value>
-    </param>
-    <param>
-      <key>win</key>
-      <value>firdes.WIN_HAMMING</value>
+      <value>32000</value>
     </param>
   </block>
   <block>
@@ -270,11 +273,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>freq</key>
-      <value>300000</value>
+      <value>channel_one</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(640, 904)</value>
+      <value>(864, 416)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -302,70 +305,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>samp_rate</key>
-      <value>1200000</value>
-    </param>
-    <param>
-      <key>waveform</key>
-      <value>analog.GR_COS_WAVE</value>
-    </param>
-  </block>
-  <block>
-    <key>analog_sig_source_x</key>
-    <param>
-      <key>amp</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>freq</key>
-      <value>center_freq - channel_one_freq</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(648, 536)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>analog_sig_source_x_0_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>offset</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>1200000</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>waveform</key>
@@ -376,7 +316,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     <key>analog_wfm_tx</key>
     <param>
       <key>audio_rate</key>
-      <value>32000</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
@@ -392,11 +332,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(424, 736)</value>
+      <value>(552, 568)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -432,108 +372,6 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
   </block>
   <block>
-    <key>blocks_add_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(976, 776)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_add_xx_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_const_vxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>const</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1184, 668)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_const_vxx_1</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_multiply_xx</key>
     <param>
       <key>alias</key>
@@ -553,7 +391,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(968, 928)</value>
+      <value>(1176, 568)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -562,57 +400,6 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     <param>
       <key>id</key>
       <value>blocks_multiply_xx_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(976, 600)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_xx_0_0</value>
     </param>
     <param>
       <key>type</key>
@@ -655,11 +442,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>file</key>
-      <value>/home/radioboy/Claves.wav</value>
+      <value>/home/radioboy/sdr/Claves.wav</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(24, 604)</value>
+      <value>(240, 588)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -698,7 +485,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>bb_gain0</key>
-      <value>0</value>
+      <value>20</value>
     </param>
     <param>
       <key>bw0</key>
@@ -714,11 +501,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>if_gain0</key>
-      <value>0</value>
+      <value>20</value>
     </param>
     <param>
       <key>gain0</key>
-      <value>0</value>
+      <value>10</value>
     </param>
     <param>
       <key>ant10</key>
@@ -1598,15 +1385,15 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>args</key>
-      <value>hackrf=0</value>
+      <value></value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1336, 552)</value>
+      <value>(1416, 544)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1614,7 +1401,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>id</key>
-      <value>osmosdr_sink_1</value>
+      <value>osmosdr_sink_0</value>
     </param>
     <param>
       <key>type</key>
@@ -1694,7 +1481,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>sample_rate</key>
-      <value>2e6</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>sync</key>
@@ -1717,11 +1504,11 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>decim</key>
-      <value>44100</value>
+      <value>1</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>fbw</key>
@@ -1729,7 +1516,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(184, 744)</value>
+      <value>(840, 576)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1737,66 +1524,7 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
     </param>
     <param>
       <key>id</key>
-      <value>rational_resampler_xxx_0_0</value>
-    </param>
-    <param>
-      <key>interp</key>
-      <value>48000</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>taps</key>
-      <value></value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>fff</value>
-    </param>
-  </block>
-  <block>
-    <key>rational_resampler_xxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>decim</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>fbw</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(680, 744)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>rational_resampler_xxx_1</value>
+      <value>rational_resampler_xxx_0</value>
     </param>
     <param>
       <key>interp</key>
@@ -1819,292 +1547,40 @@ http://wiki.opendigitalradio.org/Simple_FM_transmitter_using_gnuradio</value>
       <value>ccc</value>
     </param>
   </block>
-  <block>
-    <key>wxgui_fftsink2</key>
-    <param>
-      <key>avg_alpha</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>average</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>baseband_freq</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>fft_size</key>
-      <value>1024</value>
-    </param>
-    <param>
-      <key>freqvar</key>
-      <value>None</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1328, 924)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>grid_pos</key>
-      <value></value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>wxgui_fftsink2_0</value>
-    </param>
-    <param>
-      <key>notebook</key>
-      <value></value>
-    </param>
-    <param>
-      <key>peak_hold</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>ref_level</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>ref_scale</key>
-      <value>2.0</value>
-    </param>
-    <param>
-      <key>fft_rate</key>
-      <value>15</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>2e6</value>
-    </param>
-    <param>
-      <key>title</key>
-      <value>FFT Plot</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>win_size</key>
-      <value></value>
-    </param>
-    <param>
-      <key>win</key>
-      <value>None</value>
-    </param>
-    <param>
-      <key>y_divs</key>
-      <value>10</value>
-    </param>
-    <param>
-      <key>y_per_div</key>
-      <value>10</value>
-    </param>
-  </block>
-  <block>
-    <key>wxgui_waterfallsink2</key>
-    <param>
-      <key>avg_alpha</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>average</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>baseband_freq</key>
-      <value>center_freq</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>dynamic_range</key>
-      <value>100</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>fft_rate</key>
-      <value>15</value>
-    </param>
-    <param>
-      <key>fft_size</key>
-      <value>512</value>
-    </param>
-    <param>
-      <key>freqvar</key>
-      <value>None</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1328, 1124)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>grid_pos</key>
-      <value></value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>wxgui_waterfallsink2_0</value>
-    </param>
-    <param>
-      <key>notebook</key>
-      <value></value>
-    </param>
-    <param>
-      <key>ref_scale</key>
-      <value>2.0</value>
-    </param>
-    <param>
-      <key>ref_level</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>title</key>
-      <value>Waterfall Plot</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>win_size</key>
-      <value></value>
-    </param>
-    <param>
-      <key>win</key>
-      <value>None</value>
-    </param>
-  </block>
   <connection>
     <source_block_id>analog_sig_source_x_0</source_block_id>
     <sink_block_id>blocks_multiply_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>analog_sig_source_x_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>analog_wfm_tx_0</source_block_id>
-    <sink_block_id>rational_resampler_xxx_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>wxgui_fftsink2_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>wxgui_waterfallsink2_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_const_vxx_1</source_block_id>
-    <sink_block_id>osmosdr_sink_1</sink_block_id>
+    <sink_block_id>rational_resampler_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_multiply_xx_0</source_block_id>
-    <sink_block_id>blocks_add_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_xx_0_0</source_block_id>
-    <sink_block_id>blocks_add_xx_0</sink_block_id>
+    <sink_block_id>osmosdr_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_wavfile_source_1</source_block_id>
-    <sink_block_id>rational_resampler_xxx_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0_0</source_block_id>
     <sink_block_id>analog_wfm_tx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>blocks_add_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
+    <source_block_id>rational_resampler_xxx_0</source_block_id>
     <sink_block_id>blocks_multiply_xx_0</sink_block_id>
     <source_key>0</source_key>
-    <sink_key>0</sink_key>
+    <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_0</sink_block_id>
+    <source_block_id>rational_resampler_xxx_0</source_block_id>
+    <sink_block_id>osmosdr_sink_0</sink_block_id>
     <source_key>0</source_key>
-    <sink_key>1</sink_key>
+    <sink_key>0</sink_key>
   </connection>
 </flow_graph>
